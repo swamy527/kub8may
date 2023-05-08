@@ -1,0 +1,9 @@
+apiVersion: v1
+kind: Pod
+metadata:
+ name: stress
+spec:
+ containers:
+ - image: dockerswaha/stress
+   name: stress
+   command: ["sleep", "200"]
